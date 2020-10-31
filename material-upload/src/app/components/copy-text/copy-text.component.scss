@@ -1,0 +1,22 @@
+.row{
+    margin: 1rem;
+}
+
+.btn{
+    display: inline-block;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.2rem;
+    border-radius: 0.25rem;
+    border: 1px solid transparent;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    height: 25px;
+    background-color: #1386eb;
+    color: pink;
+    margin:0;
+}
+
+.btn-success{
+    background-color: violet;
+}

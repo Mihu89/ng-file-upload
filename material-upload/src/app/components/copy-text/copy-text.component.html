@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-10">
+            <h3>Click on this button to copy text from the <b>input</b></h3>
+            <div class="input-group">
+                <input type="text" class="form-control" [(ngModel)]="text1"
+                    placeholder="Content to be copied" />
+                <span class="input-group-append">
+                    &nbsp;&nbsp;<button class="btn btn-default"
+                        type="button"
+                        ngxClipboard
+                        [cbContent]="text1"
+                        (cbSuccess)="isCopied1 = true"
+                        (cbError)="onCopyFailure()"
+                        [class.btn-success]="isCopied1"
+                        >Copy</button>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
